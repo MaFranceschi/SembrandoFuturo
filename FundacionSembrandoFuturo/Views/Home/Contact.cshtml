@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+        <!-- Page Title -->
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <i class="icon-envelope-alt page-title-icon"></i>
+                        <h2>Contáctanos /</h2>
+                        <p>Envíanos un correo para conocer tu caso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="contact-us container">
+            <div class="row">
+                <div class="contact-form span7">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <a href="">suscipit lobortis</a> nisl ut aliquip ex ea commodo consequat.</p>
+                    @Html.Partial("ContactForm")
+                </div>
+                <div class="contact-address span5">
+                    <h4>Nos ubicamos en</h4>
+                    <div class="map">
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.ve/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Torre+Exa,+Avenida+Libertador,+Caracas&amp;aq=0&amp;oq=torre+&amp;sll=10.468392,-66.890366&amp;sspn=0.203578,0.338173&amp;ie=UTF8&amp;hq=Torre+Exa,+Avenida+Libertador,+Caracas&amp;ll=10.490594,-66.859348&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.ve/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Torre+Exa,+Avenida+Libertador,+Caracas&amp;aq=0&amp;oq=torre+&amp;sll=10.468392,-66.890366&amp;sspn=0.203578,0.338173&amp;ie=UTF8&amp;hq=Torre+Exa,+Avenida+Libertador,+Caracas&amp;ll=10.490594,-66.859348&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left">Ver mapa más grande</small>
+                    </div>
+                    <br />
+                    <h4>Dirección</h4>
+                    <p>Via Principe Amedeo 9 <br> 10100, Torino, TO, Italy</p>
+                    <p>Phone: 0039 333 12 68 347</p>
+                </div>
+            </div>
+        </div>
+
+     
+

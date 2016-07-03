@@ -1,0 +1,18 @@
+﻿@model FundacionSembrandoFuturo.Models.Email
+
+
+@using (@Html.BeginForm("Form", "Home", FormMethod.Post)) { 
+    @Html.LabelFor(m => m.Name, new { @class = "nameLabel" })
+    @Html.TextBoxFor(m => m.Name, new { @class = "emailLabel", type= "text", id="name", name="Name", placeholder="Ingrese su nombre..." })
+
+    @Html.LabelFor(m => m.Address, new { @class = "emailLabel" })
+    @Html.TextBoxFor(m => m.Address, new { id="email", type="email", name="Email", placeholder="Ingrese su correo electrónico..."})
+
+    @Html.LabelFor(m => m.Subject)
+    @Html.TextBoxFor(m => m.Subject, new {id ="subject",type="text", name="Subject", placeholder="Aquí va el título..."})
+
+    @Html.LabelFor(m => m.Content, new { @class = "messageLabel"})
+    @Html.TextBoxFor(m => m.Content, new { id = "message", name="Message",placeholder="Aquí va su mensaje..."})
+
+    <button type="submit">Enviar</button>
+}
